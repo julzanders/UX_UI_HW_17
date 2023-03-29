@@ -1,21 +1,22 @@
 .inline-block {
-    display: inline-block;
-    vertical-align: top;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-
   .logo {
-    width: 23%;
     padding: 1%;
     text-align:center;
     background-color: #2D2D2D;
   }
 
-  nav {
-    width: 73%;
-    padding: 1%;
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
     background-color: #2D2D2D;
-    text-align: right;
   }
 
   ul {
@@ -37,10 +38,35 @@
  }
 
  .content {
-    text-align:center;
-    margin: 0 auto;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 0px 80px;
+  gap: 20px;
  }
+
+ .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
 
  h1 {
   display: block;
@@ -50,6 +76,7 @@
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  color: white;
 }
 
 h2 {
@@ -59,6 +86,7 @@ h2 {
   margin-bottom: 0.83em;
   margin-left: 0;
   margin-right: 0;
+  color: white;
 }
 
  a {
@@ -70,11 +98,17 @@ h2 {
     cursor: pointer;
     border-radius: 6px;
     text-decoration: none;
+    margin-top: 100px;
   }
 
  footer {
-    background-color: #2D2D2D;
-    padding: 1%;
+    
+  display: flex;
+   background-color: #2D2D2D;
+    padding: 20px;
+    width: 100%;
+    color: white;
+
  }
 
  footer ul {
@@ -86,3 +120,8 @@ h2 {
     padding: 0 10px;
   }
   
+  .social {
+    padding: 10px;
+    margin: 20px;
+    align-items: center;
+  }
