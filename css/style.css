@@ -23,6 +23,7 @@
     display: inline-block;
     vertical-align: top;
     color: white;
+    font-family: 'Poppins', sans-serif;
   }
 
   li {
@@ -78,6 +79,7 @@
   margin-right: 0;
   font-weight: bold;
   color: white;
+  font-family: 'Libre Baskerville', serif;
 }
 
 h2 {
@@ -88,6 +90,8 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
  .btn-hero {
@@ -99,7 +103,7 @@ h2 {
     cursor: pointer;
     border-radius: 6px;
     text-decoration: none;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
  footer {
@@ -123,4 +127,9 @@ h2 {
   
   .social {
     align-items: center;
+    display: flex;
+flex-direction: row;
+padding: 0px;
+gap: 23px;
+font-family: 'Poppins', sans-serif;
   }
