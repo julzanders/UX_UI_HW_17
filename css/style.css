@@ -1,36 +1,43 @@
-.inline-block {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+*
+{
+  margin: 0;
+  padding: 0;
+}
 
-  .logo {
-    padding: 1%;
-    text-align:center;
-    background-color: #2D2D2D;
-  }
-
-  .navigation{
+body {
+	font-family: 'Poppins', sans-serif;
+} 
+ 
+  header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 80px;
     background-color: #2D2D2D;
   }
 
-  ul {
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  .nav-primary ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  li {
-    padding: 0 10px;
+  .nav-primary ul li {
+    margin: 0 20px;
   }
 
- .hero-img {
+  .nav-primary ul li a {
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+  color: white;
+
+}
+
+ .hero {
     height: 600px;
     padding: 25px;
     background-image: url('../images/hero-image.png');
@@ -43,7 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 160px 0px 80px;
+  padding-top: 140px;
   gap: 20px;
  }
 
@@ -90,11 +97,11 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   color: white;
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
- .btn-hero {
+ 
+.btn-hero {
     border: 2px solid #2DC7FF;
     background-color: none;
     color: white;
@@ -106,30 +113,33 @@ h2 {
     margin-top: 50px;
   }
 
+  .btn-hero:hover {
+    background: #F7F7F5;
+    opacity: 0.8;
+    color: #2D2D2D;
+  }
+
+  .page-down {
+    padding-top: 50px;
+  }
+
  footer {
     
   display: flex;
-   background-color: #2D2D2D;
-    padding: 20px;
-  
-    color: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 80px;
+  color: white;
+  background-color: #2D2D2D;
 
  }
 
- footer ul {
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  footer li {
-    padding: 0 10px;
-  }
   
   .social {
     align-items: center;
     display: flex;
-flex-direction: row;
-padding: 0px;
-gap: 23px;
-font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    gap: 15px;
+    font-weight: 200;
   }
