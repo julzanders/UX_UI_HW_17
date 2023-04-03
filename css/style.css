@@ -37,6 +37,12 @@ body {
 
 }
 
+.nav-primary ul li a:hover {
+	
+  color: #2DC7FF;
+
+}
+
  .hero {
     height: 600px;
     padding: 25px;
